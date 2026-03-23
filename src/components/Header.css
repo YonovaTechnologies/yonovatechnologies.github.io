@@ -31,15 +31,6 @@
   color: var(--secondary);
 }
 
-.logo-icon {
-  color: var(--primary);
-  width: 28px;
-  height: 28px;
-}
-
-.logo-highlight {
-  color: var(--primary);
-}
 
 /* Desktop Nav */
 .desktop-nav {

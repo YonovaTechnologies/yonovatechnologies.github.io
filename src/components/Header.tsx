@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Cloud } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import './Header.css';
+import logoImg from '../assets/logo.jpeg';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,8 +33,7 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled glass' : ''}`}>
       <div className="container header-container">
         <Link to="/" className="logo">
-          <Cloud className="logo-icon" />
-          <span className="logo-text">Yonova<span className="logo-highlight">Tech</span></span>
+          <img src={logoImg} alt="Yonova Tech Logo" className="logo-image" style={{ height: '40px', width: 'auto' }} />
         </Link>
 
         {/* Desktop Navigation */}

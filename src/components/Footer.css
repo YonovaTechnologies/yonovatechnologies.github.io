@@ -26,15 +26,6 @@
   color: white;
 }
 
-/* Ensure logo text remains white in footer */
-.footer-logo .logo-text {
-  color: white;
-}
-
-/* Override the normal a hover color for the logo in footer */
-.footer-logo:hover .logo-text {
-  color: white;
-}
 
 .footer-desc {
   color: #94a3b8;
