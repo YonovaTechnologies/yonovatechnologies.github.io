@@ -26,6 +26,14 @@
   color: white;
 }
 
+.footer-logo-image {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  background-color: white;
+  padding: 8px;
+  border-radius: 6px;
+}
 
 .footer-desc {
   color: #94a3b8;

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { Cloud, BarChart3, Database, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
