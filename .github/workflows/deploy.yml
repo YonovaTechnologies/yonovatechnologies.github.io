@@ -2,25 +2,29 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # Or "master" depending on your repo
-  workflow_dispatch: # Allows manual trigger
+    branches: ["main"]
+  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# Add the environment variable at the workflow level to opt-in to Node 24
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4 # Note: v4 is still the latest major, but the runner will now use Node 24
 
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24 # Update this to 24
           cache: 'npm'
 
       - name: Install dependencies
