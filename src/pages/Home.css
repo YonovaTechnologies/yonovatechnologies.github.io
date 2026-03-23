@@ -6,10 +6,7 @@
 /* Hero Section */
 .hero {
   position: relative;
-  height: 100vh;
-  min-height: 600px;
   display: flex;
-  align-items: center;
   overflow: hidden;
   background-color: var(--background);
 }
@@ -37,11 +34,14 @@
   max-width: 800px;
   text-align: center;
   padding: 4rem 3rem;
+  margin-top: 130px; /* 80px header + 50px gap */
+  margin-bottom: 50px;
   border-radius: var(--radius-lg);
   background: rgba(255, 255, 255, 0.7) !important;
   border: 1px solid rgba(255, 255, 255, 0.5) !important;
   box-shadow: var(--shadow-sm);
   color: var(--text-main);
+  width: 100%;
 }
 
 .hero-title {
@@ -81,8 +81,8 @@
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2.5rem;
-  margin-top: 3rem;
+  gap: 50px;
+  margin-top: 0;
 }
 
 .service-card {

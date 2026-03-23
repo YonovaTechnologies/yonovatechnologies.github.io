@@ -40,22 +40,8 @@ const About = () => {
 
   return (
     <div className="about-page">
-      {/* Page Header */}
-      <section className="page-header">
-        <div className="container">
-          <motion.div 
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h1>About Us</h1>
-            <p>Elevating businesses with cutting-edge cloud data engineering.</p>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Intro Section */}
-      <section className="section bg-light">
+      <section className="section bg-light" style={{ paddingTop: '50px' }}>
         <div className="container">
           <motion.div 
             className="about-intro-grid"
@@ -76,7 +62,7 @@ const About = () => {
             <div className="about-intro-image">
               <div className="image-placeholder gradient-bg">
                 <div className="glass floating-badge">
-                  <h3>10+</h3>
+                  <h3>2+</h3>
                   <span>Years Experience</span>
                 </div>
               </div>
@@ -86,18 +72,8 @@ const About = () => {
       </section>
 
       {/* Core Values Section */}
-      <section className="section values-section">
+      <section className="values-section" style={{ padding: '50px 0' }}>
         <div className="container">
-          <motion.div 
-            className="text-center"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-          >
-            <h2 className="section-title">Our Core Values</h2>
-            <p className="subtitle">The principles that guide everything we do.</p>
-          </motion.div>
 
           <motion.div 
             className="values-grid"

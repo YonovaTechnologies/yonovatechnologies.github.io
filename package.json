@@ -1,9 +1,8 @@
 {
-  "name": "yonova-technologies-website",
+  "name": "Yonova Technologies",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://YonovaTechnologies.github.io",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

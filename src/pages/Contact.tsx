@@ -12,21 +12,7 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
-      {/* Page Header */}
-      <section className="page-header">
-        <div className="container">
-          <motion.div 
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h1>Contact Us</h1>
-            <p>We are here to help! Send us a message.</p>
-          </motion.div>
-        </div>
-      </section>
-
-      <section className="section bg-light">
+      <section className="section bg-light" style={{ paddingTop: '50px' }}>
         <div className="container">
           <div className="contact-grid">
             {/* Contact Info */}

@@ -36,22 +36,8 @@ const Services = () => {
 
   return (
     <div className="services-page">
-      {/* Page Header */}
-      <section className="page-header">
-        <div className="container">
-          <motion.div 
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h1>Our Services</h1>
-            <p>How can we help you achieve your goals?</p>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Services Detailed List */}
-      <section className="section bg-light">
+      <section className="section bg-light" style={{ paddingTop: '50px' }}>
         <div className="container">
           <div className="services-detailed-grid">
             {servicesList.map((service, index) => (

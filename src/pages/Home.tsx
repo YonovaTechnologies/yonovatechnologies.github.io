@@ -46,17 +46,8 @@ const Home = () => {
       </section>
 
       {/* Hire Us For Section */}
-      <section id="services" className="section bg-light">
+      <section id="services" className="bg-light" style={{ padding: '50px 0' }}>
         <div className="container">
-          <motion.h2 
-            className="section-title"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            Hire Us For
-          </motion.h2>
 
           <motion.div 
             className="services-grid"
