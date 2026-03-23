@@ -1,0 +1,135 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: var(--transition);
+  border-bottom: 1px solid transparent;
+  background-color: transparent;
+}
+
+.header.scrolled {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom-color: var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.logo-icon {
+  color: var(--primary);
+  width: 28px;
+  height: 28px;
+}
+
+.logo-highlight {
+  color: var(--primary);
+}
+
+/* Desktop Nav */
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--text-main);
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: var(--primary);
+}
+
+/* Mobile Nav Toggle */
+.mobile-menu-btn {
+  display: none;
+  color: var(--secondary);
+}
+
+/* Mobile Nav */
+.mobile-nav {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+  padding: 1rem 0;
+}
+
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.mobile-nav-link {
+  color: var(--text-main);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.mobile-nav-link.active {
+  color: var(--primary);
+}
+
+.mobile-btn {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+  }
+}

@@ -1,0 +1,111 @@
+/* Services Page Styles */
+.services-page {
+  padding-top: 80px; /* offset header */
+}
+
+/* Common Page Header (Reusable for About/Contact as well if needed) */
+.page-header {
+  background-color: var(--secondary);
+  background-image: radial-gradient(circle at 10% 20%, rgba(14, 165, 233, 0.2) 0%, transparent 40%);
+  color: white;
+  padding: 6rem 0;
+  text-align: center;
+  border-bottom: 4px solid var(--primary);
+}
+
+.page-header h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.page-header p {
+  color: #cbd5e1;
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Detailed Services Grid */
+.services-detailed-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.service-detail-card {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  background: var(--surface);
+  padding: 4rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+.service-detail-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-5px);
+}
+
+/* Alternate rows */
+.service-detail-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.service-icon-large {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+}
+
+.color-blue {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(2, 132, 199, 0.2));
+  color: var(--primary);
+}
+
+.color-rose {
+  background: linear-gradient(135deg, rgba(244, 63, 94, 0.1), rgba(225, 29, 72, 0.2));
+  color: var(--accent);
+}
+
+.color-cyan {
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(8, 145, 178, 0.2));
+  color: #06b6d4;
+}
+
+.service-content {
+  flex: 1;
+}
+
+.service-content h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+  color: var(--secondary);
+}
+
+.service-content p {
+  font-size: 1.125rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .service-detail-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+  }
+  
+  .service-detail-card:nth-child(even) {
+    flex-direction: column;
+  }
+}
