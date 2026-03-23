@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Facebook, Twitter, Youtube } from 'lucide-react';
 import './Footer.css';
@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link to="/" className="footer-logo">
-              <img src={logoImg} alt="Yonova Tech Logo" className="footer-logo-image" style={{ height: '40px', width: 'auto', background: 'white', padding: '5px', borderRadius: '4px' }} />
+              <img src={logoImg} alt="Yonova Tech Logo" className="footer-logo-image" />
             </Link>
             <p className="footer-desc">
               Empowering your business with robust cloud data engineering solutions to accelerate your success.

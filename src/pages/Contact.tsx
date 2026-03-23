@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Facebook, Twitter, Youtube } from 'lucide-react';
 import './Contact.css';

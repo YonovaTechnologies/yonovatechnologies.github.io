@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import './Header.css';
@@ -33,7 +33,7 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled glass' : ''}`}>
       <div className="container header-container">
         <Link to="/" className="logo">
-          <img src={logoImg} alt="Yonova Tech Logo" className="logo-image" style={{ height: '40px', width: 'auto' }} />
+          <img src={logoImg} alt="Yonova Tech Logo" className="logo-image" />
         </Link>
 
         {/* Desktop Navigation */}
