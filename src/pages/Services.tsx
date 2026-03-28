@@ -1,6 +1,6 @@
 
 import { motion } from 'framer-motion';
-import { Cloud, BarChart3, Database, ArrowRight } from 'lucide-react';
+import { Cloud, BarChart3, Database, GitBranch, Cpu, Bot, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './Services.css';
 
@@ -13,24 +13,87 @@ const Services = () => {
   const servicesList = [
     {
       id: 1,
-      title: 'Cloud Data Engineering',
-      description: 'We build scalable data pipelines to move, process, and transform your data in the cloud, ensuring it\'s ready for analysis and seamless integration.',
+      title: 'Data Engineering',
+      description: 'Develop reliable and scalable data pipelines that collect, process, and transform data from multiple sources into structured datasets for analytics and reporting.',
+      capabilities: [
+        'Data pipeline development',
+        'ETL / ELT pipeline design',
+        'Data integration from multiple sources',
+        'Data quality and validation frameworks',
+        'Real-time and batch data processing'
+      ],
       icon: <Database size={40} />,
       color: 'blue'
     },
     {
       id: 2,
-      title: 'Data Analytics & BI',
-      description: 'We turn raw data into actionable insights with custom dashboards and reports, enabling data-driven decisions and performance tracking.',
+      title: 'Data Warehousing and Analytics',
+      description: 'Design modern cloud data warehouses and analytics platforms that centralize data, enabling fast reporting, dashboards, and actionable insights.',
+      capabilities: [
+        'Cloud data warehouse design (BigQuery, Snowflake)',
+        'Data modeling and schema design',
+        'Data aggregation and transformation',
+        'Analytics and BI reporting',
+        'Real-time and historical data analysis'
+      ],
       icon: <BarChart3 size={40} />,
-      color: 'rose'
+      color: 'blue'
     },
     {
       id: 3,
-      title: 'Cloud Architecture for Data',
-      description: 'We design secure, scalable cloud infrastructure for data systems, ensuring cost optimization, seamless growth, and high performance.',
-      icon: <Cloud size={40} />,
+      title: 'DataOps',
+      description: 'Implement automated workflows, orchestration, and monitoring systems to ensure reliable, efficient, and scalable data operations.',
+      capabilities: [
+        'Workflow automation and orchestration',
+        'Data pipeline monitoring and alerts',
+        'CI/CD for data pipelines',
+        'Testing and validation frameworks',
+        'Operational efficiency optimization'
+      ],
+      icon: <GitBranch size={40} />,
       color: 'cyan'
+    },
+    {
+      id: 4,
+      title: 'MLOps',
+      description: 'Operationalize machine learning models by building automated pipelines for training, deployment, monitoring, and lifecycle management.',
+      capabilities: [
+        'ML pipeline development and automation',
+        'Model training and deployment',
+        'Model monitoring and performance tracking',
+        'Feature engineering pipelines',
+        'Scalable ML infrastructure'
+      ],
+      icon: <Cpu size={40} />,
+      color: 'indigo'
+    },
+    {
+      id: 5,
+      title: 'Agentic AI',
+      description: 'Develop intelligent AI agents that can autonomously analyze data, automate workflows, and support business decision-making.',
+      capabilities: [
+        'AI-powered autonomous agents',
+        'Data-driven task automation',
+        'Intelligent workflow orchestration',
+        'Predictive and prescriptive analytics',
+        'AI integration with existing systems'
+      ],
+      icon: <Bot size={40} />,
+      color: 'purple'
+    },
+    {
+      id: 6,
+      title: 'Cloud Solutions Architecture',
+      description: 'Design scalable, secure, and cost-efficient cloud architectures to support modern data platforms, analytics systems, and AI solutions.',
+      capabilities: [
+        'Cloud platform architecture (GCP-focused)',
+        'Data lake, lakehouse, and warehouse design',
+        'Scalable analytics and AI infrastructure',
+        'Cloud migration strategies',
+        'Security, governance, and compliance'
+      ],
+      icon: <Cloud size={40} />,
+      color: 'emerald'
     }
   ];
 
@@ -57,10 +120,19 @@ const Services = () => {
                 </div>
                 <div className="service-content">
                   <h2>{service.title}</h2>
-                  <p>{service.description}</p>
-                  <Link to="/contact" className="btn btn-outline mt-4">
-                    Get In Touch <ArrowRight size={18} />
-                  </Link>
+                  <p className="service-desc">{service.description}</p>
+                  
+                  <div className="capabilities-container">
+                    <h3>Key capabilities</h3>
+                    <ul className="capabilities-list">
+                      {service.capabilities.map((cap, i) => (
+                        <li key={i}>
+                          <CheckCircle2 size={18} className="cap-icon" />
+                          <span>{cap}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </motion.div>
             ))}

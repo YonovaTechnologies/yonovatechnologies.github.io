@@ -70,13 +70,18 @@
   color: var(--secondary);
 }
 
-.info-text p, .info-text a {
+.info-text p {
   color: var(--text-muted);
   font-size: 1rem;
 }
 
+.info-text a {
+  color: #1c4792;
+  font-size: 1rem;
+}
+
 .info-text a:hover {
-  color: var(--primary);
+  color: #20c4f4;
 }
 
 /* Social Connect */

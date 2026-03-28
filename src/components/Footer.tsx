@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail, Facebook, Twitter, Youtube } from 'lucide-react';
+import { MapPin, Phone, Mail, Facebook, Twitter, Youtube, Linkedin } from 'lucide-react';
 import './Footer.css';
 import logoImg from '../assets/logo.jpeg';
 
@@ -14,12 +14,15 @@ const Footer = () => {
               <img src={logoImg} alt="Yonova Tech Logo" className="footer-logo-image" />
             </Link>
             <p className="footer-desc">
-              Empowering your business with robust cloud data engineering solutions to accelerate your success.
+              Data Engineering | DataOps | MlOps | Agentic AI | Cloud Solution Architecture
             </p>
             <div className="social-links">
-              <a href="#" aria-label="Facebook"><Facebook size={20} /></a>
+              {/* <a href="#" aria-label="Facebook"><Facebook size={20} /></a>
               <a href="#" aria-label="Twitter"><Twitter size={20} /></a>
-              <a href="#" aria-label="Youtube"><Youtube size={20} /></a>
+              <a href="#" aria-label="Youtube"><Youtube size={20} /></a> */}
+              <a href="https://www.linkedin.com/company/yonova-technologies" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <Linkedin size={20} />
+              </a>
             </div>
           </div>
 
@@ -51,7 +54,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="footer-bottom">
           <p>Yonova Technologies &copy; {new Date().getFullYear()} All Rights Reserved</p>
         </div>

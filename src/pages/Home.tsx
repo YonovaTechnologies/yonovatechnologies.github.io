@@ -1,8 +1,9 @@
 
 import { motion } from 'framer-motion';
-import { Server, Database, Code, ArrowRight, CheckCircle } from 'lucide-react';
+import { Database, GitBranch, Cpu, Bot, Cloud, BarChart2, ArrowRight, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './Home.css';
+import heroImg from '../assets/hero-illustration.png';
 
 const Home = () => {
   const fadeInUp = {
@@ -21,25 +22,33 @@ const Home = () => {
       <section className="hero">
         <div className="hero-background"></div>
         <div className="container hero-container">
-          <motion.div 
+          <motion.div
             className="hero-content glass"
             initial="hidden"
             animate="visible"
             variants={fadeInUp}
           >
-            <h1 className="hero-title">
-              Transform your data into <span className="gradient-text">actionable insights</span>
-            </h1>
-            <p className="hero-subtitle">
-              Empower your business with Yonova Technologies. We create robust cloud data engineering solutions to accelerate your success.
-            </p>
-            <div className="hero-actions">
-              <a href="#services" className="btn btn-primary btn-lg">
-                Find out how! <ArrowRight size={20} />
-              </a>
-              <Link to="/contact" className="btn btn-outline btn-lg">
-                Let's Talk
-              </Link>
+            <div className="hero-grid">
+              <div className="text-left" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start' }}>
+                <div className="hero-tags" style={{ textAlign: 'left', marginBottom: '1.5rem', fontSize: '1.7rem', fontWeight: 700, color: '#1c4792' }}>
+                  <span style={{ color: '#1c4792' }}>Data Engineering</span> | <span style={{ color: '#1c4792' }}>DataOps</span> | <span style={{ color: '#1c4792' }}>MlOps</span> | <span style={{ color: '#1c4792' }}>Agentic AI</span> | <span style={{ color: '#1c4792' }}>Cloud Solution Architecture</span>
+                </div>
+                <p className="hero-subtitle" style={{ fontSize: '1.5rem', fontWeight: 600, color: 'var(--secondary)', lineHeight: '1.4', textAlign: 'justify' }}>
+                  Yonova Technologies helps organizations design, build, and manage scalable data and AI platforms using modern cloud technologies. Our expertise spans Data Engineering, DataOps, MLOps, Agentic AI, and Cloud Solutions Architecture, enabling businesses to transform raw data into reliable pipelines, intelligent automation, and data-driven insights.
+                </p>
+                <div className="hero-actions justify-start" style={{ marginTop: '0.5rem' }}>
+                  <a href="#services" className="btn btn-primary btn-lg">
+                    Find out how! <ArrowRight size={20} />
+                  </a>
+                  <Link to="/contact" className="btn btn-outline btn-lg">
+                    Let's Talk
+                  </Link>
+                </div>
+              </div>
+
+              <div className="hero-image-wrapper">
+                <img src={heroImg} alt="Data Engineering Consulting" className="hero-image" />
+              </div>
             </div>
           </motion.div>
         </div>
@@ -49,21 +58,13 @@ const Home = () => {
       <section id="services" className="bg-light" style={{ padding: '50px 0' }}>
         <div className="container">
 
-          <motion.div 
+          <motion.div
             className="services-grid"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={staggerContainer}
           >
-            <motion.div className="service-card" variants={fadeInUp}>
-              <div className="icon-wrapper">
-                <Server size={32} />
-              </div>
-              <h3>Cloud Solution</h3>
-              <p>Design and implement scalable, secure, and efficient cloud architectures tailored to meet your business needs.</p>
-            </motion.div>
-
             <motion.div className="service-card" variants={fadeInUp}>
               <div className="icon-wrapper">
                 <Database size={32} />
@@ -74,10 +75,42 @@ const Home = () => {
 
             <motion.div className="service-card" variants={fadeInUp}>
               <div className="icon-wrapper">
-                <Code size={32} />
+                <BarChart2 size={32} />
               </div>
-              <h3>Custom Cloud & Data Integration</h3>
-              <p>Seamless integration of cloud infrastructure and data workflows for optimal performance and scalability.</p>
+              <h3>Data Warehousing and Analytics Service</h3>
+              <p>Build scalable data warehouses and analytics platforms that centralize data from multiple sources and enable advanced reporting, business intelligence, and data-driven insights.</p>
+            </motion.div>
+
+            <motion.div className="service-card" variants={fadeInUp}>
+              <div className="icon-wrapper">
+                <GitBranch size={32} />
+              </div>
+              <h3>DataOps Service</h3>
+              <p>Implement automated data workflows and monitoring systems to ensure reliable, efficient, and scalable data pipeline operations.</p>
+            </motion.div>
+
+            <motion.div className="service-card" variants={fadeInUp}>
+              <div className="icon-wrapper">
+                <Cpu size={32} />
+              </div>
+              <h3>MLOps Service</h3>
+              <p>Operationalize machine learning models by building automated pipelines for model training, deployment, monitoring, and lifecycle management.</p>
+            </motion.div>
+
+            <motion.div className="service-card" variants={fadeInUp}>
+              <div className="icon-wrapper">
+                <Bot size={32} />
+              </div>
+              <h3>Agentic AI Service</h3>
+              <p>Develop intelligent AI agents that can autonomously analyze data, automate workflows, and support business decision-making.</p>
+            </motion.div>
+
+            <motion.div className="service-card" variants={fadeInUp}>
+              <div className="icon-wrapper">
+                <Cloud size={32} />
+              </div>
+              <h3>Cloud Solutions Architecture Service</h3>
+              <p>Design scalable and secure cloud architectures that enable organizations to build modern data platforms, analytics systems, and AI solutions.</p>
             </motion.div>
           </motion.div>
         </div>
@@ -86,7 +119,7 @@ const Home = () => {
       {/* About Section */}
       <section className="section about-preview">
         <div className="container about-container">
-          <motion.div 
+          <motion.div
             className="about-text"
             initial="hidden"
             whileInView="visible"
@@ -95,7 +128,7 @@ const Home = () => {
           >
             <h2 className="section-title text-left">About Us</h2>
             <p className="lead">We provide cloud data engineering services. Our team delivers scalable, secure, and cost-effective solutions to help businesses thrive in the cloud.</p>
-            
+
             <div className="mission-vision">
               <div className="mv-box">
                 <h4>Mission</h4>
@@ -110,7 +143,7 @@ const Home = () => {
             <Link to="/about" className="btn btn-outline mt-4">Read More About Us</Link>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="about-image-wrapper"
             initial="hidden"
             whileInView="visible"
@@ -120,14 +153,20 @@ const Home = () => {
               visible: { opacity: 1, x: 0, transition: { duration: 0.8 } }
             }}
           >
-            <div className="floating-card glass">
+            <div className="floating-card glass floating-card-1">
               <CheckCircle size={28} className="text-accent" />
               <div>
                 <h5>Highly Motivated</h5>
-                <span>Innovative Ideas</span>
+                <span>Team Members</span>
               </div>
             </div>
-            {/* Using a placeholder gradient block for now instead of an actual image */}
+            <div className="floating-card glass floating-card-2">
+              <CheckCircle size={28} className="text-accent" />
+              <div>
+                <h5>GCP Certified</h5>
+                <span>Professional Engineers</span>
+              </div>
+            </div>
             <div className="about-image-placeholder"></div>
           </motion.div>
         </div>
@@ -136,7 +175,7 @@ const Home = () => {
       {/* CTA Section */}
       <section className="section cta-section">
         <div className="container">
-          <motion.div 
+          <motion.div
             className="cta-content glass"
             initial="hidden"
             whileInView="visible"
@@ -148,7 +187,6 @@ const Home = () => {
               When you partner with us, you’re not just upgrading your technology — you’re enhancing your entire business. We are committed to providing the best solutions to help your team and organization grow. If you’re looking for a trusted partner to help you leverage cloud data engineering for better performance, scalability, and success, we’re here to make it happen!
             </p>
             <div className="cta-buttons">
-              <Link to="/contact" className="btn btn-primary btn-lg">Get A Quote Now</Link>
             </div>
           </motion.div>
         </div>

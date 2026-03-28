@@ -43,13 +43,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: var(--primary);
+  color: #1c4792;
   text-decoration: none;
   transition: var(--transition);
 }
 
-a:hover {
-  color: var(--primary-dark);
+a:hover, a:active {
+  color: #20c4f4;
 }
 
 img {

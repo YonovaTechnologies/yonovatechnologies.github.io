@@ -50,7 +50,6 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          <Link to="/contact" className="btn btn-primary">Get A Quote</Link>
         </nav>
 
         {/* Mobile menu toggle */}
@@ -76,9 +75,6 @@ const Header = () => {
                 </Link>
               </li>
             ))}
-            <li>
-              <Link to="/contact" className="mobile-btn btn btn-primary">Get A Quote</Link>
-            </li>
           </ul>
         </div>
       )}

@@ -53,15 +53,21 @@ const About = () => {
             <div className="about-intro-text">
               <h2 className="section-title text-left">Who We Are</h2>
               <p className="lead">
-                We are a team of experienced professionals in cloud data engineering, dedicated to helping businesses unlock their potential through innovative, scalable, and secure technology.
+                At Yonova Technologies Pvt. Ltd., we help organizations transform raw data into valuable insights by building modern data and AI platforms. Our expertise spans Data Engineering, DataOps, MLOps, Agentic AI, and Cloud Solutions Architecture, enabling businesses to harness the full potential of their data.
               </p>
               <p>
-                If you’re looking for cutting-edge cloud data engineering solutions and scalable technology to elevate your business, we are here to help. Our team of experts brings years of experience in connecting the dots between your raw data and actionable business intelligence.
+                We design and implement robust data pipelines, automated data workflows, machine learning operations, and intelligent AI-driven systems that support analytics, automation, and smarter decision-making. By leveraging modern cloud technologies, we build scalable, reliable, and cost-efficient infrastructures that power advanced analytics, machine learning, and business intelligence.
               </p>
             </div>
             <div className="about-intro-image">
               <div className="image-placeholder gradient-bg">
-                <div className="glass floating-badge">
+                <div className="glass floating-badge badge-gcp">
+                  <div>
+                    <h5>GCP Certified</h5>
+                    <span>Professional Engineers</span>
+                  </div>
+                </div>
+                <div className="glass floating-badge badge-experience">
                   <h3>2+</h3>
                   <span>Years Experience</span>
                 </div>
