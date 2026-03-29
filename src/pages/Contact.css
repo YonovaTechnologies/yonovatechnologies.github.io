@@ -5,7 +5,8 @@
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr; /* Changed to 1 column since form is removed */
+  grid-template-columns: 1fr;
+  /* Changed to 1 column since form is removed */
   gap: 4rem;
   max-width: 800px;
   margin: 0 auto;
@@ -64,13 +65,18 @@
   flex-shrink: 0;
 }
 
+.info-text {
+  text-align: left;
+}
+
 .info-text h4 {
   font-size: 1.125rem;
   margin-bottom: 0.25rem;
   color: var(--secondary);
 }
 
-.info-text p {
+.info-text p,
+.info-text span {
   color: var(--text-muted);
   font-size: 1rem;
 }
@@ -213,7 +219,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  pointer-events: none; /* Let clicks pass through to the iframe */
+  pointer-events: none;
+  /* Let clicks pass through to the iframe */
 }
 
 .map-overlay {
@@ -222,7 +229,8 @@
   border-radius: var(--radius-lg);
   text-align: center;
   box-shadow: var(--shadow-md);
-  pointer-events: auto; /* Re-enable clicks on the overlay itself */
+  pointer-events: auto;
+  /* Re-enable clicks on the overlay itself */
 }
 
 .map-overlay h3 {
@@ -238,7 +246,7 @@
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-  
+
   .contact-form-container {
     padding: 2rem;
   }

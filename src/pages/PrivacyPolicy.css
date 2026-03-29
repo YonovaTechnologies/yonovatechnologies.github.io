@@ -1,0 +1,136 @@
+/* Privacy Policy Page */
+.privacy-page {
+  padding-top: 80px;
+}
+
+/* Hero */
+.privacy-hero {
+  background: linear-gradient(135deg, #1c4792 0%, #0f2d6e 100%);
+  padding: 5rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.privacy-hero::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: rgba(32, 196, 244, 0.08);
+  pointer-events: none;
+}
+
+.privacy-hero-content {
+  text-align: center;
+}
+
+.privacy-hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.privacy-company {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #20c4f4;
+  margin-bottom: 0.4rem;
+}
+
+.privacy-effective {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.4px;
+}
+
+/* Body */
+.privacy-body {
+  padding: 5rem 0 6rem;
+  background-color: var(--background);
+}
+
+.privacy-container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* Sections */
+.privacy-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.privacy-section {
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  padding: 2rem 2.5rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.privacy-section:hover {
+  box-shadow: var(--shadow-md);
+  border-color: rgba(28, 71, 146, 0.3);
+}
+
+.privacy-section h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1c4792;
+  margin-bottom: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid rgba(28, 71, 146, 0.12);
+}
+
+.privacy-section-body p {
+  font-size: 1rem;
+  color: var(--text-main);
+  line-height: 1.85;
+  margin-bottom: 0.75rem;
+}
+
+.privacy-section-body p:last-child {
+  margin-bottom: 0;
+}
+
+.privacy-section-body ul {
+  padding-left: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 0.5rem 0;
+}
+
+.privacy-section-body li {
+  font-size: 1rem;
+  color: var(--text-main);
+  line-height: 1.75;
+  list-style-type: disc;
+}
+
+.privacy-section-body a {
+  color: #1c4792;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+}
+
+.privacy-section-body a:hover {
+  color: #20c4f4;
+}
+
+@media (max-width: 768px) {
+  .privacy-hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .privacy-section {
+    padding: 1.5rem;
+  }
+}

@@ -1,6 +1,6 @@
 
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Facebook, Twitter, Youtube } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 import './Contact.css';
 
 const Contact = () => {
@@ -16,7 +16,7 @@ const Contact = () => {
         <div className="container">
           <div className="contact-grid">
             {/* Contact Info */}
-            <motion.div 
+            <motion.div
               className="contact-info"
               initial="hidden"
               whileInView="visible"
@@ -25,7 +25,7 @@ const Contact = () => {
             >
               <h2 className="section-title">Get In Touch</h2>
               <p className="lead mb-4">Have questions or want to discuss a project? Feel free to reach out to us using the contact details below.</p>
-              
+
               <div className="info-cards">
                 <div className="info-card glass">
                   <div className="icon-box">
@@ -53,17 +53,17 @@ const Contact = () => {
                   </div>
                   <div className="info-text">
                     <h4>Email Address</h4>
-                    <a href="mailto:hello@yonovatechnologies.com">hello@yonovatechnologies.com</a>
+                    <span>hello@yonovatechnologies.com</span>
                   </div>
                 </div>
               </div>
 
               <div className="social-connect mt-4">
-                <h4>Follow Us</h4>
+                {/* <h4>Follow Us</h4> */}
                 <div className="social-icons">
-                  <a href="#" className="social-icon"><Facebook size={20} /></a>
+                  {/* <a href="#" className="social-icon"><Facebook size={20} /></a>
                   <a href="#" className="social-icon"><Twitter size={20} /></a>
-                  <a href="#" className="social-icon"><Youtube size={20} /></a>
+                  <a href="#" className="social-icon"><Youtube size={20} /></a> */}
                 </div>
               </div>
             </motion.div>

@@ -132,6 +132,17 @@
   font-size: 0.9rem;
 }
 
+.footer-privacy-link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.footer-privacy-link:hover {
+  color: #20c4f4;
+}
+
 @media (max-width: 900px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr;

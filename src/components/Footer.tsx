@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail, Facebook, Twitter, Youtube, Linkedin } from 'lucide-react';
+import { MapPin, Phone, Mail, Linkedin } from 'lucide-react';
 import './Footer.css';
 import logoImg from '../assets/logo.jpeg';
 
@@ -49,14 +49,18 @@ const Footer = () => {
               </li>
               <li>
                 <Mail size={18} />
-                <a href="mailto:hello@yonovatechnologies.com">hello@yonovatechnologies.com</a>
+                <span>hello@yonovatechnologies.com</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>Yonova Technologies &copy; {new Date().getFullYear()} All Rights Reserved</p>
+          <p>
+            Yonova Technologies &copy; {new Date().getFullYear()} All Rights Reserved
+            {' | '}
+            <Link to="/privacy-policy" className="footer-privacy-link">Privacy Policy</Link>
+          </p>
         </div>
       </div>
     </footer>

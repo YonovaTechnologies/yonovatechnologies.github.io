@@ -30,7 +30,7 @@ const Services = () => {
       title: 'Data Warehousing and Analytics',
       description: 'Design modern cloud data warehouses and analytics platforms that centralize data, enabling fast reporting, dashboards, and actionable insights.',
       capabilities: [
-        'Cloud data warehouse design (BigQuery, Snowflake)',
+        'Cloud data warehouse design (BigQuery)',
         'Data modeling and schema design',
         'Data aggregation and transformation',
         'Analytics and BI reporting',
@@ -83,7 +83,7 @@ const Services = () => {
     },
     {
       id: 6,
-      title: 'Cloud Solutions Architecture',
+      title: 'Cloud Solution Architecture',
       description: 'Design scalable, secure, and cost-efficient cloud architectures to support modern data platforms, analytics systems, and AI solutions.',
       capabilities: [
         'Cloud platform architecture (GCP-focused)',
@@ -104,7 +104,7 @@ const Services = () => {
         <div className="container">
           <div className="services-detailed-grid">
             {servicesList.map((service, index) => (
-              <motion.div 
+              <motion.div
                 key={service.id}
                 className="service-detail-card"
                 initial="hidden"
@@ -121,7 +121,7 @@ const Services = () => {
                 <div className="service-content">
                   <h2>{service.title}</h2>
                   <p className="service-desc">{service.description}</p>
-                  
+
                   <div className="capabilities-container">
                     <h3>Key capabilities</h3>
                     <ul className="capabilities-list">
@@ -143,7 +143,7 @@ const Services = () => {
       {/* CTA Section */}
       <section className="section cta-section">
         <div className="container">
-          <motion.div 
+          <motion.div
             className="cta-content glass"
             initial="hidden"
             whileInView="visible"

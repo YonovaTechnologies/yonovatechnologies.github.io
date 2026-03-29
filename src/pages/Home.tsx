@@ -31,7 +31,7 @@ const Home = () => {
             <div className="hero-grid">
               <div className="text-left" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start' }}>
                 <div className="hero-tags" style={{ textAlign: 'left', marginBottom: '1.5rem', fontSize: '1.7rem', fontWeight: 700, color: '#1c4792' }}>
-                  <span style={{ color: '#1c4792' }}>Data Engineering</span> | <span style={{ color: '#1c4792' }}>DataOps</span> | <span style={{ color: '#1c4792' }}>MlOps</span> | <span style={{ color: '#1c4792' }}>Agentic AI</span> | <span style={{ color: '#1c4792' }}>Cloud Solution Architecture</span>
+                  <span style={{ color: '#1c4792' }}>Data Engineering</span> | <span style={{ color: '#1c4792' }}>DataOps</span> | <span style={{ color: '#1c4792' }}>MLOps</span> | <span style={{ color: '#1c4792' }}>Agentic AI</span> | <span style={{ color: '#1c4792' }}>Cloud Solution Architecture</span>
                 </div>
                 <p className="hero-subtitle" style={{ fontSize: '1.5rem', fontWeight: 600, color: 'var(--secondary)', lineHeight: '1.4', textAlign: 'justify' }}>
                   Yonova Technologies helps organizations design, build, and manage scalable data and AI platforms using modern cloud technologies. Our expertise spans Data Engineering, DataOps, MLOps, Agentic AI, and Cloud Solutions Architecture, enabling businesses to transform raw data into reliable pipelines, intelligent automation, and data-driven insights.
@@ -109,7 +109,7 @@ const Home = () => {
               <div className="icon-wrapper">
                 <Cloud size={32} />
               </div>
-              <h3>Cloud Solutions Architecture Service</h3>
+              <h3>Cloud Solution Architecture Service</h3>
               <p>Design scalable and secure cloud architectures that enable organizations to build modern data platforms, analytics systems, and AI solutions.</p>
             </motion.div>
           </motion.div>
