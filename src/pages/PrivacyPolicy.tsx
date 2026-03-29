@@ -67,11 +67,12 @@ const PrivacyPolicy = () => {
       ),
     },
     {
-      title: '6. Children\'s Privacy',
+      title: '6. Changes to this Privacy Policy',
       content: (
         <ul>
-          <li>Our website is not intended for children under 13 years old.</li>
-          <li>We do not knowingly collect information from children.</li>
+          <li>We may update this Privacy Policy from time to time.</li>
+          <li>The “Effective Date” at the top reflects the latest version.</li>
+          <li>We encourage visitors to review this policy periodically.</li>
         </ul>
       ),
     },
