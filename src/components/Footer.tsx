@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Linkedin } from 'lucide-react';
 import './Footer.css';
-import logoImg from '../assets/logo.jpeg';
+import logoImg from '../assets/logo.png';
 
 const Footer = () => {
   return (
