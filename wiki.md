@@ -93,6 +93,8 @@ sequenceDiagram
 * `/privacy-policy` - **Privacy Policy**: Required business compliance details.
 
 ## Component Diagram
+
+```mermaid
 graph TD
     %% Base Node
     Components((Yonova Components))
@@ -150,4 +152,5 @@ graph TD
     %% Style modifications for a cleaner look
     classDef page fill:#1c4792,stroke:#0f2b5a,stroke-width:2px,color:#fff;
     class Home,About,Services page;
+```
 
